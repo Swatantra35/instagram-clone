@@ -24,6 +24,17 @@ img {
 .instagram_home {
   display: flex;
 }
+.post-comment {
+  background: none;
+  border: none;
+  color: #0095f6;
+  font-weight: bold;
+  cursor: pointer;
+}
+.comments p {
+  margin-top: 5px;
+  font-size: 14px;
+}
 
 /* Sidebar */
 .sidebar {
