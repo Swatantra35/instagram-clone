@@ -22,6 +22,26 @@ document.querySelectorAll(".post").forEach((post) => {
       liked = false;
     }
   });
+// STORY SLIDER
+const stories = document.querySelector(".stories-section");
+const leftBtn = document.querySelector(".story-btn.left");
+const rightBtn = document.querySelector(".story-btn.right");
+
+if (stories && leftBtn && rightBtn) {
+  leftBtn.addEventListener("click", () => {
+    stories.scrollBy({
+      left: -200,
+      behavior: "smooth",
+    });
+  });
+
+  rightBtn.addEventListener("click", () => {
+    stories.scrollBy({
+      left: 200,
+      behavior: "smooth",
+    });
+  });
+}
 
   // DOUBLE CLICK LIKE
   const postImage = post.querySelector(".post-body img");
