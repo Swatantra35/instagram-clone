@@ -35,6 +35,49 @@ img {
   margin-top: 5px;
   font-size: 14px;
 }
+.stories-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.stories-section {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+
+.stories-section::-webkit-scrollbar {
+  display: none;
+}
+
+.story-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.story-btn.left {
+  left: -10px;
+}
+
+.story-btn.right {
+  right: -10px;
+}
+
+.story-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
 
 /* Sidebar */
 .sidebar {
