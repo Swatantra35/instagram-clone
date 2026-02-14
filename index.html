@@ -40,7 +40,6 @@
         <main class="middle">
           <!-- Stories -->
           <div class="stories-section">
-            <!-- Repeat stories -->
             <div class="story">
               <div class="story-profile">
                 <img src="azad_photo.jpeg" alt="Azad Pic" />
@@ -86,7 +85,7 @@
               <div class="post-footer">
                 <div class="actions">
                   <div class="likes-comment">
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart like-btn"></i>
                     <i class="fa-regular fa-comment"></i>
                     <i class="fa-regular fa-paper-plane"></i>
                   </div>
@@ -101,7 +100,9 @@
                     <img src="like.jpg" />
                     <img src="like.jpg" />
                   </div>
-                  <div class="likes-numbers">69 likes</div>
+                  <div class="likes-numbers">
+                    <span class="like-count">69</span> likes
+                  </div>
                 </div>
 
                 <div class="caption">
@@ -111,9 +112,14 @@
                 </div>
 
                 <div class="comment-section">
-                  <textarea placeholder="Add a comment…"></textarea>
-                  <i class="fa-regular fa-face-smile"></i>
+                  <textarea
+                    class="comment-input"
+                    placeholder="Add a comment…"
+                  ></textarea>
+                  <button class="post-comment">Post</button>
                 </div>
+
+                <div class="comments"></div>
               </div>
             </div>
 
@@ -134,7 +140,7 @@
               <div class="post-footer">
                 <div class="actions">
                   <div class="likes-comment">
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart like-btn"></i>
                     <i class="fa-regular fa-comment"></i>
                     <i class="fa-regular fa-paper-plane"></i>
                   </div>
@@ -149,7 +155,9 @@
                     <img src="like.jpg" />
                     <img src="like.jpg" />
                   </div>
-                  <div class="likes-numbers">69 likes</div>
+                  <div class="likes-numbers">
+                    <span class="like-count">69</span> likes
+                  </div>
                 </div>
 
                 <div class="caption">
@@ -159,9 +167,14 @@
                 </div>
 
                 <div class="comment-section">
-                  <textarea placeholder="Add a comment…"></textarea>
-                  <i class="fa-regular fa-face-smile"></i>
+                  <textarea
+                    class="comment-input"
+                    placeholder="Add a comment…"
+                  ></textarea>
+                  <button class="post-comment">Post</button>
                 </div>
+
+                <div class="comments"></div>
               </div>
             </div>
           </div>
@@ -181,5 +194,8 @@
         </aside>
       </div>
     </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>
